@@ -12,6 +12,3 @@ const pool = new Pool ({
 export default pool
 
 
-pool.query('SELECT NOW()')
-  .then(res => console.log('📡 PostgreSQL connected at:', res.rows[0].now))
-  .catch(err => console.error('❌ Connection error:', err));
